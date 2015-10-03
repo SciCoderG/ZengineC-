@@ -1,8 +1,13 @@
 #pragma once
 
-#include <GLFW/glfw3.h>
 #include <iostream>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 
+
+// we're using the glew static library, so we don't have to copy the dll. 
+// Keep in mind, that means that we have to define GLEW_STATIC in the c++
+// Preprocessor Project-properties
 namespace zengine
 {
 	namespace graphics 
